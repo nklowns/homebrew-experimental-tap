@@ -11,7 +11,7 @@ cask "antigravity-linux" do
 
   url "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/#{version.csv.first}-#{version.csv.second}/linux-#{arch}/Antigravity%20IDE.tar.gz",
       verified: "edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/"
-  name "Google Antigravity"
+  name "Google Antigravity IDE"
   desc "AI Coding Agent IDE"
   homepage "https://antigravity.google/"
 
@@ -26,6 +26,9 @@ cask "antigravity-linux" do
     end
   end
 
+  binary "#{staged_path}/Antigravity IDE/bin/antigravity-ide", target: "antigravity"
+  bash_completion "#{staged_path}/Antigravity IDE/resources/completions/bash/antigravity-ide"
+  zsh_completion  "#{staged_path}/Antigravity IDE/resources/completions/zsh/_antigravity-ide"
   artifact "antigravity.desktop",
            target: "#{Dir.home}/.local/share/applications/antigravity.desktop"
   artifact "antigravity-url-handler.desktop",
