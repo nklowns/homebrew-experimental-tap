@@ -26,9 +26,6 @@ cask "antigravity-linux" do
     end
   end
 
-  binary "#{staged_path}/Antigravity IDE/bin/antigravity-ide", target: "antigravity"
-  bash_completion "#{staged_path}/Antigravity IDE/resources/completions/bash/antigravity-ide"
-  zsh_completion  "#{staged_path}/Antigravity IDE/resources/completions/zsh/_antigravity-ide"
   artifact "antigravity.desktop",
            target: "#{Dir.home}/.local/share/applications/antigravity.desktop"
   artifact "antigravity-url-handler.desktop",
