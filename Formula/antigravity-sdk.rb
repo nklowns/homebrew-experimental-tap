@@ -1,5 +1,5 @@
 class AntigravitySdk < Formula
-  desc "Antigravity SDK - Python SDK for building with Antigravity"
+  desc "Python SDK for building with Google Antigravity"
   homepage "https://github.com/google-antigravity/antigravity-sdk-python"
   url "https://github.com/google-antigravity/antigravity-sdk-python.git", tag: "latest"
   license "Apache-2.0"
