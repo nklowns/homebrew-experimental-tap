@@ -9,7 +9,7 @@ cask "visual-studio-code-linux@insiders" do
            x86_64_linux: "be5d508e6e4ba90f42756b475c651e45b199917ea5e505ecf08b650c876bcd24"
   end
 
-  url "https://update.code.visualstudio.com/#{version}/#{os}-#{arch}/insider"
+  url "https://update.code.visualstudio.com/#{version}/linux-#{arch}/insider"
   name "Microsoft Visual Studio Code Insiders"
   name "VS Code Insiders"
   desc "Open-source code editor (Insiders build)"
