@@ -16,7 +16,7 @@ cask "visual-studio-code-linux@insiders" do
   homepage "https://code.visualstudio.com/insiders/"
 
   livecheck do
-    url "https://update.code.visualstudio.com/api/update/#{os}-#{arch}/insider/latest"
+    url "https://update.code.visualstudio.com/api/update/linux-#{arch}/insider/latest"
     strategy :json do |json|
       json["productVersion"]
     end
